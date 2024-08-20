@@ -1,0 +1,83 @@
+@import 'base';
+
+// header start
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)), url(../images/bg.jpeg) center;
+    position: relative;
+    background-size: cover;
+
+    &-brand{
+        @include flex();
+    }
+    
+    &-icon{
+        padding: 1.5rem;
+        margin: 3rem;
+        color: $color-primary;
+        font-size: 4rem;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+    }
+    &-title{
+        color: $color-secondary;
+        font-size: 3rem;
+        font-family: $font-sahel;
+
+    }
+    &-subtitle{
+        color: $color-secondary;
+        font-size: 1rem;
+        font-family: $font-sahel;
+        text-align: center;
+    }
+
+    &-banner{
+        padding: 1.5rem;
+        margin-top: 1rem;
+        @include flex(column);
+
+        &__title{
+            color: $color-primary;
+            font-family: $font-nastaliq;
+            font-size: 5rem;
+
+        }
+
+        &__subtitle{
+            color: $color-secondary;
+            font-family: $font-sahel;
+            font-size: 3rem;
+            padding-top: 2rem;
+        }
+
+        &__btn{
+            color: $color-primary;
+            font-family: $font-sahel;
+            font-size: 1rem;
+            border: 1px solid $color-primary;
+            background-color: transparent;    
+            margin-top: 2rem;
+            padding: 0.5rem 4rem;
+        }
+    }
+
+}
+
+
+
+.header-banner__title{
+
+}
+
+.header-banner__subtitle{
+
+}
+
+.header-banner__btn{
+
+}
+
+// header finish
