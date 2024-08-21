@@ -380,4 +380,70 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 0.5;
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+@media (max-width: 500px) {
+  .footer .social-media {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+.footer .social-media__item {
+  list-style: none;
+}
+.footer .social-media__link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: color 0.7s;
+}
+.footer .social-media__link:hover {
+  color: #d3ab55;
+}
+@media (max-width: 1000px) {
+  .footer .social-media__link {
+    font-size: 35px;
+  }
+}
+.footer-copyright__paragraph {
+  font-family: Sahel, Tahoma;
+  font-size: 20px;
+  color: #bbb;
+  direction: rtl;
+}
+@media (max-width: 800px) {
+  .footer-copyright__paragraph {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .footer-copyright__paragraph {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
