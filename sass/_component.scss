@@ -24,3 +24,12 @@
       transform-origin: right;
     }
 }
+.btn{
+  color: $color-primary;
+  font-family: $font-sahel;
+  font-size: 1rem;
+  border: 1px solid $color-primary;
+  background-color: transparent;
+  margin-top: 2rem;
+  padding: 0.5rem 4rem;
+}

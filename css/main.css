@@ -1,10 +1,7 @@
-body {
-  background-color: rgb(235, 21, 57);
-}
-
-p {
-  color: whitesmoke;
-}/*# sourceMappingURL=main.css.map */ttf"), url("../fonts/Sahel.woff") format("woff");
+@font-face {
+  font-family: Sahel;
+  src: url("../fonts/Sahel.eot");
+  src: url("../fonts/Sahel.ttf") format("ttf"), url("../fonts/Sahel.woff") format("woff");
   font-weight: normal;
 }
 @font-face {
@@ -48,16 +45,6 @@ body {
   background-color: #d3ab55;
   transition: all 0.5s 0.5s;
   transform-origin: right;
-}
-
-.btn {
-  color: #d3ab55;
-  font-family: Sahel, Tahoma;
-  font-size: 1rem;
-  border: 1px solid #d3ab55;
-  background-color: transparent;
-  margin-top: 2rem;
-  padding: 0.5rem 4rem;
 }
 
 @font-face {
@@ -136,6 +123,15 @@ body {
   font-size: 3rem;
   padding-top: 2rem;
 }
+.header-banner__btn {
+  color: #d3ab55;
+  font-family: Sahel, Tahoma;
+  font-size: 1rem;
+  border: 1px solid #d3ab55;
+  background-color: transparent;
+  margin-top: 2rem;
+  padding: 0.5rem 4rem;
+}
 
 .navbar {
   position: relative;
@@ -205,6 +201,28 @@ body {
 }
 
 .navbar-checkbox:checked ~ .navbar-navigation .navbar-navigation-left {
+  left: 0;
+}
+
+.navbar-checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
+  right: 0;
+}
+
+.navbar-checkbox:checked ~ .navbar-hamburger__menu .hamburger-menu {
+  transform: rotateZ(90deg);
+}
+
+.navbar-checkbox:checked ~ .navbar-hamburger__menu .hamburger-menu__line-1 {
+  transform: rotateZ(-40deg);
+}
+
+.navbar-checkbox:checked ~ .navbar-hamburger__menu .hamburger-menu__line-2 {
+  opacity: 0;
+}
+
+.navbar-checkbox:checked ~ .navbar-hamburger__menu .hamburger-menu__line-3 {
+  transform: rotateZ(40deg);
+}/*# sourceMappingURL=main.css.map */navbar-navigation-left {
   left: 0;
 }
 
