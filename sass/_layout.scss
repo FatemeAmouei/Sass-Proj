@@ -13,6 +13,9 @@
 
   &-brand {
     @include flex();
+    @media (max-width: 500px) {
+      @include centering(12%);
+    }
   }
 
   &-icon {
@@ -22,12 +25,32 @@
     font-size: 4rem;
     border: 1px solid $color-primary;
     border-radius: 50%;
+
+    @media (max-width: 1000px) {
+      font-size: 50px;
+      width: 90px;
+      height: 90px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 40px;
+      width: 70px;
+      height: 70px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      border-width: 2px;
+    }
   }
 
   &-title {
     color: $color-secondary;
     font-size: 3rem;
     font-family: $font-sahel;
+    @include titleMedia();
   }
 
   &-subtitle {
@@ -35,6 +58,7 @@
     font-size: 1rem;
     font-family: $font-sahel;
     text-align: center;
+    @include subtitleMedia();
   }
 
   &-banner {
@@ -46,6 +70,7 @@
       color: $color-primary;
       font-family: $font-nastaliq;
       font-size: 5rem;
+      @include bannertitleMedia();
     }
 
     &__subtitle {
@@ -53,6 +78,7 @@
       font-family: $font-sahel;
       font-size: 3rem;
       padding-top: 2rem;
+      @include bannersubtitleMedia();
     }
   }
 }
@@ -74,25 +100,43 @@
       position: fixed;
       left: -50vw;
       transition: left 0.8s cubic-bezier(1, 0, 0, 1);
-
+      @media (max-width: 800px) {
+        display: none;
+      }
       .navigation-img {
         width: 50%;
         position: absolute;
         box-shadow: 0 15px 60px rgba($color-black, 0.4);
         opacity: 0.7;
         border-radius: 10px;
+        @media (max-width: 1300px) {
+          width: 55%;
+        }
+
+        @media (max-width: 1000px) {
+          width: 65%;
+        }
       }
       .navigation-left__img-1 {
         top: 60%;
         left: 15%;
+        @media (max-width: 1000px) {
+          left: 5%;
+        }
       }
       .navigation-left__img-2 {
         top: 70%;
         left: 25%;
+        @media (max-width: 1000px) {
+          left: 15%;
+        }
       }
       .navigation-left__img-3 {
         top: 80%;
         left: 35%;
+        @media (max-width: 1000px) {
+          left: 20%;
+        }
       }
     }
 
@@ -105,7 +149,10 @@
       right: -50vw;
       padding-top: 10rem;
       transition: right 0.8s cubic-bezier(1, 0, 0, 1);
-
+      @media (max-width: 800px) {
+        width: 100vw;
+        right: -100vw;
+      }
       .navigation-right__ul {
         .navigation-right__li {
           list-style: none;
@@ -120,7 +167,9 @@
             margin: 20px;
             text-align: center;
             transition: all 0.5s;
-
+            @media (max-width: 600px) {
+              font-size: 30px;
+            }
             &:hover {
               color: $color-primary;
               letter-spacing: 4px;
@@ -158,10 +207,14 @@
 // aboutUs start
 .aboutUs {
   @include flex();
-
+  @media (max-width: 800px) {
+    height: 70vh;
+  }
   &-left {
     width: 50%;
-
+    @media (max-width: 800px) {
+      display: none;
+    }
     &__img {
       width: 40vw;
       padding: 12rem 5rem 12rem 0;
@@ -173,12 +226,19 @@
     @include flex(column);
     direction: rtl;
     padding-right: 5rem;
+    @media (max-width: 1300px) {
+      padding: 0 50px;
+    }
 
+    @media (max-width: 800px) {
+      width: 100%;
+    }
     &__title {
       color: $color-primary;
       font-family: $font-nastaliq;
       font-size: 80px;
       margin-bottom: 20px;
+      @include titleMedia();
     }
 
     &__subtitle {
@@ -191,12 +251,18 @@
 
     &__stars {
       margin: 30px 0;
+      @media (max-width: 1000px) {
+        margin: 15px 0;
+      }
     }
 
     &__star {
       font-size: 15px;
       color: $color-primary;
       margin-left: 10px;
+      @media (max-width: 1000px) {
+        font-size: 12px;
+      }
     }
 
     &__description {
@@ -208,6 +274,13 @@
 
       &::first-letter {
         padding-right: 30px;
+      }
+      @media (max-width: 1600px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 1000px) {
+        font-size: 14px;
       }
     }
   }
@@ -249,6 +322,17 @@
           font-family: $font-nastaliq;
           font-size: 50px;
           @include textStyles;
+          @media (max-width: 900px) {
+            font-size: 35px;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 25px;
+          }
+
+          @media (max-width: 500px) {
+            display: none;
+          }
         }
 
         &__price {
@@ -256,6 +340,17 @@
           font-size: 30px;
           margin-bottom: 30px;
           @include textStyles;
+          @media (max-width: 900px) {
+            font-size: 20px;
+          }
+
+          @media (max-width: 600px) {
+            font-size: 15px;
+          }
+
+          @media (max-width: 500px) {
+            display: none;
+          }
         }
 
         &__btn {
@@ -269,6 +364,21 @@
           border-radius: 30px;
           outline: none;
           cursor: pointer;
+        }
+        @media (max-width: 900px) {
+          font-size: 12px;
+          width: 130px;
+          height: 30px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 10px;
+          width: 100px;
+        }
+
+        @media (max-width: 500px) {
+          font-size: 10px;
+          width: 90px;
         }
       }
 
