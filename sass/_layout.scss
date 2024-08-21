@@ -28,6 +28,7 @@
     font-size: 3rem;
     font-family: $font-sahel;
   }
+
   &-subtitle {
     color: $color-secondary;
     font-size: 1rem;
@@ -51,16 +52,6 @@
       font-family: $font-sahel;
       font-size: 3rem;
       padding-top: 2rem;
-    }
-
-    &__btn {
-      color: $color-primary;
-      font-family: $font-sahel;
-      font-size: 1rem;
-      border: 1px solid $color-primary;
-      background-color: transparent;
-      margin-top: 2rem;
-      padding: 0.5rem 4rem;
     }
   }
 }
@@ -167,3 +158,63 @@
   transform: rotateZ(40deg);
 }
 // navbar finish
+
+// aboutUs start
+.aboutUs{
+  @include flex();
+
+  &-left {
+    width:50%;
+
+    &__img{
+      width:40vw;
+      padding: 12rem 5rem 12rem 0;
+      opacity: 0.7;
+    }
+  }
+
+  &-right{
+    @include flex(column);
+    direction:rtl;
+    padding-right: 5rem;
+
+    &__title{
+      color: $color-primary;
+      font-family: $font-nastaliq;
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle{
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: $color-secondary;
+      font-family: $font-sahel;
+      text-align: center;
+    }
+
+    &__stars{
+      margin: 30px 0;
+    }
+    
+    &__star{
+      font-size: 15px;
+      color: $color-primary;
+      margin-left: 10px;
+    }
+
+    &__description {
+      font-family: $font-nastaliq;
+      font-size: 25px;
+      color: $color-secondary;
+      direction: rtl;
+      text-align: justify;
+
+      &::first-letter {
+        padding-right: 30px;
+      }
+    }
+  }
+
+
+}

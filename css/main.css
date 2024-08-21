@@ -50,6 +50,16 @@ body {
   transform-origin: right;
 }
 
+.btn {
+  color: #d3ab55;
+  font-family: Sahel, Tahoma;
+  font-size: 1rem;
+  border: 1px solid #d3ab55;
+  background-color: transparent;
+  margin-top: 2rem;
+  padding: 0.5rem 4rem;
+}
+
 @font-face {
   font-family: Sahel;
   src: url("../fonts/Sahel.eot");
@@ -125,15 +135,6 @@ body {
   font-family: Sahel, Tahoma;
   font-size: 3rem;
   padding-top: 2rem;
-}
-.header-banner__btn {
-  color: #d3ab55;
-  font-family: Sahel, Tahoma;
-  font-size: 1rem;
-  border: 1px solid #d3ab55;
-  background-color: transparent;
-  margin-top: 2rem;
-  padding: 0.5rem 4rem;
 }
 
 .navbar {
@@ -225,4 +226,58 @@ body {
 
 .navbar-checkbox:checked ~ .navbar-hamburger__menu .hamburger-menu__line-3 {
   transform: rotateZ(40deg);
+}
+
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.aboutUs-left {
+  width: 50%;
+}
+.aboutUs-left__img {
+  width: 40vw;
+  padding: 12rem 5rem 12rem 0;
+  opacity: 0.7;
+}
+.aboutUs-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  direction: rtl;
+  padding-right: 5rem;
+}
+.aboutUs-right__title {
+  color: #d3ab55;
+  font-family: Nastaliq, Tahoma;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.aboutUs-right__subtitle {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #bbb;
+  font-family: Sahel, Tahoma;
+  text-align: center;
+}
+.aboutUs-right__stars {
+  margin: 30px 0;
+}
+.aboutUs-right__star {
+  font-size: 15px;
+  color: #d3ab55;
+  margin-left: 10px;
+}
+.aboutUs-right__description {
+  font-family: Nastaliq, Tahoma;
+  font-size: 25px;
+  color: #bbb;
+  direction: rtl;
+  text-align: justify;
+}
+.aboutUs-right__description::first-letter {
+  padding-right: 30px;
 }/*# sourceMappingURL=main.css.map */

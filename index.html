@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,56 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link
-    href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+        rel="stylesheet">
     <title>Sass Project</title>
 </head>
+
 <body>
-        <!-- start navbar section -->
-        <nav class="navbar">
-            <input type="checkbox" id="check" class="navbar-checkbox" hidden>
-            <div class="navbar-hamburger__menu">
-                <label for="check" class="hamburger-menu">
-                    <div class="hamburger-menu-line hamburger-menu__line-1"></div>
-                    <div class="hamburger-menu-line hamburger-menu__line-2"></div>
-                    <div class="hamburger-menu-line hamburger-menu__line-3"></div>
-                </label>
+    <!-- start navbar -->
+    <nav class="navbar">
+        <input type="checkbox" id="check" class="navbar-checkbox" hidden>
+        <div class="navbar-hamburger__menu">
+            <label for="check" class="hamburger-menu">
+                <div class="hamburger-menu-line hamburger-menu__line-1"></div>
+                <div class="hamburger-menu-line hamburger-menu__line-2"></div>
+                <div class="hamburger-menu-line hamburger-menu__line-3"></div>
+            </label>
+        </div>
+        <div class="navbar-navigation">
+            <div class="navbar-navigation-left">
+                <img src="images/nav-img-1.jpeg" class="navigation-img navigation-left__img-1">
+                <img src="images/nav-img-2.jpeg" class="navigation-img navigation-left__img-2">
+                <img src="images/nav-img-3.jpeg" class="navigation-img navigation-left__img-3">
             </div>
-            <div class="navbar-navigation">
-                <div class="navbar-navigation-left">
-                    <img src="images/nav-img-1.jpeg" class="navigation-img navigation-left__img-1">
-                    <img src="images/nav-img-2.jpeg" class="navigation-img navigation-left__img-2">
-                    <img src="images/nav-img-3.jpeg" class="navigation-img navigation-left__img-3">
-                </div>
-                <div class="navbar-navigation-right">
-                    <ul class="navigation-right__ul">
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">خانه</a>
-                        </li>
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">درباره ما</a>
-                        </li>
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">گالری تصایر</a>
-                        </li>
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">رزرو میز</a>
-                        </li>
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">سرویس ها</a>
-                        </li>
-                        <li class="navigation-right__li">
-                            <a href="#" class="navigation-right-link">تماس با ما</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="navbar-navigation-right">
+                <ul class="navigation-right__ul">
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">خانه</a>
+                    </li>
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">درباره ما</a>
+                    </li>
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">گالری تصایر</a>
+                    </li>
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">رزرو میز</a>
+                    </li>
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">سرویس ها</a>
+                    </li>
+                    <li class="navigation-right__li">
+                        <a href="#" class="navigation-right-link">تماس با ما</a>
+                    </li>
+                </ul>
             </div>
-    
-        </nav>
-        <!-- end navbar section -->
-    <!-- header -->
+        </div>
+
+    </nav>
+    <!-- Finish navbar -->
+
+    <!-- start header -->
     <header class="header">
         <div class="header-brand">
             <a href="#" class="header-logo">
@@ -68,9 +71,42 @@
         <div class="header-banner">
             <h1 class="header-banner__title">خوش آمدید</h1>
             <h3 class="header-banner__subtitle">غذاهای ما را امتحان کنید</h3>
-            <button type="button" class="header-banner__btn">رزرو میز</button>
+            <button type="button" class="header-banner__btn btn">رزرو میز</button>
         </div>
     </header>
-    <!-- header -->
+    <!-- Finish header -->
+
+    <!-- start aboutus  -->
+    <section class="aboutUs">
+        <div class="aboutUs-left">
+            <img class="aboutUs-left__img" src="images/about-us-img.png" alt="درباره ما">
+        </div>
+        <div class="aboutUs-right">
+            <h1 class="aboutUs-right__title">درباره ی رستوران</h1>
+            <h3 class="aboutUs-right__subtitle">درباره سرآشپز</h3>
+            <div class="aboutUs-right__stars">
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+            </div>
+            <p class="aboutUs-right__description">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده
+                شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+                الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و
+                دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+                اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+            <div class="aboutUs-right__stars">
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+                <i class="fa fa-star-of-life aboutUs-right__star"></i>
+            </div>
+            <button type="button" class="aboutUs-btn btn">اطلاعات بیشتر</button>
+        </div>
+    </section>
+    <!-- Finish aboutus -->
 </body>
+
 </html>
