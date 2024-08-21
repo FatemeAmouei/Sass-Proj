@@ -70,6 +70,7 @@ $font-nastaliq: Nastaliq, Tahoma;
     font-size: 14px;
   }
 }
+
 @mixin bannertitleMedia {
   @media (max-width: 1600px) {
     font-size: 80px;
@@ -84,6 +85,7 @@ $font-nastaliq: Nastaliq, Tahoma;
     margin-bottom: 20px;
   }
 }
+
 @mixin bannersubtitleMedia {
   @media (max-width: 1600px) {
     font-size: 50px;
