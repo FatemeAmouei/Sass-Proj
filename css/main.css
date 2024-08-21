@@ -311,7 +311,19 @@ body {
 }
 .aboutUs-right__description::first-letter {
   padding-right: 30px;
-}/*# sourceMappingURL=main.css.map */ .cards-wrapper .card {
+}/*# sourceMappingURL=main.css.map */irst-letter {
+  padding-right: 30px;
+}
+
+.gallery {
+  padding-top: 3rem;
+}
+.gallery .cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery .cards-wrapper .card {
   width: 33.3333%;
   height: 30vw;
   position: relative;
@@ -326,7 +338,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   flex-direction: column;
   position: absolute;
   top: 0;

@@ -31,5 +31,10 @@
   border: 1px solid $color-primary;
   background-color: transparent;
   margin-top: 2rem;
-  padding: 0.5rem 4rem;
+  padding: 0.5rem rem;
+
+  &:hover{
+    background-color: $color-primary;
+    color: $color-secondary;
+  }
 }
