@@ -51,6 +51,13 @@
     font-size: 3rem;
     font-family: $font-sahel;
     @include titleMedia();
+    @media (max-width: 1000px) {
+      font-size: 40px;
+    }
+    @media (max-width: 500px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   &-subtitle {
@@ -59,6 +66,10 @@
     font-family: $font-sahel;
     text-align: center;
     @include subtitleMedia();
+    @media (max-width: 500px) {
+      font-size: 10px;
+      text-align: center;
+    }
   }
 
   &-banner {
@@ -71,6 +82,13 @@
       font-family: $font-nastaliq;
       font-size: 5rem;
       @include bannertitleMedia();
+      @media (max-width: 1000px) {
+        font-size: 40px;
+      }
+      @media (max-width: 500px) {
+        font-size: 20px;
+        text-align: center;
+      }
     }
 
     &__subtitle {
@@ -79,6 +97,10 @@
       font-size: 3rem;
       padding-top: 2rem;
       @include bannersubtitleMedia();
+      @media (max-width: 500px) {
+        font-size: 12px;
+        text-align: center;
+      }
     }
   }
 }
@@ -112,9 +134,11 @@
         @media (max-width: 1300px) {
           width: 55%;
         }
-
         @media (max-width: 1000px) {
           width: 65%;
+        }
+        @media (max-width: 800px) {
+          display: none;
         }
       }
       .navigation-left__img-1 {
@@ -275,7 +299,7 @@
       &::first-letter {
         padding-right: 30px;
       }
-            @media (max-width: 1600px) {
+      @media (max-width: 1600px) {
         font-size: 20px;
       }
 
@@ -323,11 +347,11 @@
           font-size: 50px;
           @include textStyles;
           @media (max-width: 900px) {
-            font-size: 15px;
+            font-size: 35px;
           }
 
-          @media (max-width: 600px) {
-            font-size: 10px;
+          @media (max-width: 650px) {
+            font-size: 25px;
           }
 
           @media (max-width: 500px) {
@@ -343,11 +367,9 @@
           @media (max-width: 900px) {
             font-size: 20px;
           }
-
-          @media (max-width: 600px) {
+          @media (max-width: 650px) {
             font-size: 15px;
           }
-
           @media (max-width: 500px) {
             display: none;
           }
@@ -367,18 +389,14 @@
         }
         @media (max-width: 900px) {
           font-size: 12px;
-          width: 130px;
+          width: 100px;
           height: 30px;
         }
-
-        @media (max-width: 600px) {
-          font-size: 10px;
-          width: 100px;
-        }
-
-        @media (max-width: 500px) {
-          font-size: 10px;
-          width: 90px;
+        @media (max-width: 650px) {
+          width: 50px;
+          height: 30px;
+          font-size: 100px;
+          align-items: center;
         }
       }
 
